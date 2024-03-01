@@ -1,0 +1,128 @@
+#banner {
+  background-image: url("../images/background-hero-mobile.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 9.75rem 1rem 7.5rem 1rem;
+  position: relative;
+}
+
+#banner::after {
+  background-color: #0000004d;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.banner__container {
+  margin: auto;
+  max-width: 1140px;
+  position: relative;
+  z-index: 2;
+}
+
+.banner__container h1 {
+  color: #f9e994;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin: 0 1rem 2rem 1rem;
+  max-width: 600px;
+  text-align: center;
+}
+
+.banner__content-cats {
+  position: relative;
+}
+
+.cat-food {
+  display: block;
+  margin: auto;
+  max-width: 388px;
+  position: relative;
+  transition: all 0.6s ease-in-out;
+  width: 58%;
+}
+
+.cats {
+  bottom: 0;
+  display: flex;
+  gap: 30%;
+  height: fit-content;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+
+.cat-left,
+.cat-right {
+  display: block;
+  max-width: 235px;
+  transition: all 0.6s ease-in-out;
+  width: 35%;
+}
+
+.banner__content-cats:hover .cat-food {
+  transform: scale(1.15);
+}
+
+.banner__content-cats:hover .cat-left {
+  transform: translateX(-20px);
+}
+
+.banner__content-cats:hover .cat-right {
+  transform: translateX(20px);
+}
+
+@media screen and (min-width: 576px) {
+  .banner__container h1 {
+    font-size: 3.25rem;
+    line-height: 3.75rem;
+    margin: 0 auto 3rem auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #banner {
+    background-image: url("../images/background-banner-desktop.webp");
+  }
+
+  .banner__container h1 {
+    margin: 0 auto 3.75rem auto;
+  }
+
+  .banner__content {
+    position: relative;
+  }
+
+  .banner__content-cats {
+    margin: auto;
+    max-width: 700px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .cats {
+    gap: 5rem;
+    left: 50%;
+    max-width: 655px;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  /* .banner__info {} - banner-info.css */
+
+  #banner {
+    background-attachment: initial;
+  }
+
+  .banner__content-cats {
+    transform: translateX(21px);
+  }
+}

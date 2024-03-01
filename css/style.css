@@ -1,0 +1,30 @@
+:root {
+  --dark-yellow: #715d00;
+  --yellow: #f6e791;
+  --light-green: #d4df6d;
+  --green: #a1d337;
+  --dark-green: #537d13;
+  --dark-brown: #483c08;
+  --ivory: #f6f7e4;
+  --blue: #7fb3e1;
+  --blue-form: #7eb2e1;
+  --light-gray: #dfe4de;
+  --almoust-white: #fdfcfc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-width: 320px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
